@@ -1,0 +1,46 @@
+# --- West / Zephyr workspace ---
+/build/
+/build-*/
+*.map
+*.elf
+*.bin
+*.hex
+*.uf2
+*.lst
+*.dis
+*.dat
+zephyr/.config
+zephyr/include/generated/
+zephyr/misc/generated/
+.west/
+west-init.log
+
+# Zephyr module/west workspace artifacts (if this repo is the manifest/app repo
+# and pulls other modules alongside it rather than nesting them)
+/modules/
+/tools/
+/bootloader/
+/zephyr/
+
+# --- CMake / Ninja / Kconfig ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Kconfig.modules
+Kconfig.dts
+Kconfig.dts.h
+*.ninja
+.ninja_log
+.ninja_deps
+
+# --- Devicetree generated files ---
+*.dts.pre.tmp
+*.dtb
+zephyr.dts
+build_info.yml
+
+# --- just ---
+.justfile.cache
+justfile.local
+.jus
