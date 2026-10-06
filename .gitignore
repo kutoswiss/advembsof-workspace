@@ -44,3 +44,6 @@ build_info.yml
 .justfile.cache
 justfile.local
 .jus
+
+# --- twister ---
+/twister*/
