@@ -1,10 +1,20 @@
 applications:
-  - app: blinky
-    boards:
-      - board: nrf5340dk/nrf5340/cpuapp        
-      - board: qemu_x86
-      # - board: native_sim
-    configs:
-      - gpio
-      - log+debug+gpio
-    config_dir: ../deps/zpp_lib/configs
+    - app: blinky
+      boards:
+        - board: nrf5340dk/nrf5340/cpuapp
+        - board: qemu_x86
+        # - board: native_sim
+      configs:
+        - gpio
+        - log+debug+gpio
+      configs_dir: ../deps/zpp_lib/configs
+
+    - app: bme280
+      boards:
+        - board: nrf5340dk/nrf5340/cpuapp
+        - board: qemu_x86
+        # - board: native_sim
+      configs: 
+        - sensor
+        - log+debug+sensor
+      configs_dir: ../deps/zpp_lib/configs
